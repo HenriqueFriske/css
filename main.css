@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #0265c2;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    position: relative;
+    font-size: 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.menu li a:hover{
+    color: #ffd500;
+}
+.sobreLoja{
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
+}
+
+.sobreLoja img{
+    max-width: 100%;
+}
+.sobreLoja h2{
+    padding: 20px 0;
+    border-bottom: #0265c2 solid 2px;
+    color: #0265c2;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sobreLoja p{
+    padding: 40px 0;
+}
+
+.titulo{
+    padding-top: 80px ;
+    border-bottom: #0265c2 solid 2px;
+    color: #0265c2;
+    font-style: italic;
+    font-weight: bold;
+    
+
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 22.7%);
+    column-gap: 3%;
+    list-style: none;
+}
+
+.produtos img{
+    max-width: 100%;
+    padding: 50px 0 30px;
+}
+.produtos h3{
+    font-size: 26px;
+}
+.produtos h2, p{
+    padding: 16px 0;
+}
+
+
