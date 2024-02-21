@@ -88,6 +88,10 @@ header{
     padding: 16px 0;
 }
 @media screen and (max-width: 680px) {
-    
+    .produtos{
+        display: grid;
+        grid-template-columns: 95%;
+        list-style: none;
+    }
 }
 
