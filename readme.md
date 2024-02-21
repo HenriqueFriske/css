@@ -1,0 +1,1 @@
+precisa ser centralizada as imagens e escritas do sobre a loja na view mobile e tablet

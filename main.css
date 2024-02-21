@@ -42,13 +42,14 @@ header{
     display: grid;
     grid-template-columns: 30% 65%;
     column-gap: 5%;
+    margin-top: 50px;
 }
 
 .sobreLoja img{
     max-width: 100%;
 }
 .sobreLoja h2{
-    padding: 20px 0;
+    padding-bottom: 20px;
     border-bottom: #0265c2 solid 2px;
     color: #0265c2;
     font-size: 26px;
@@ -87,11 +88,146 @@ header{
 .produtos h2, p{
     padding: 16px 0;
 }
-@media screen and (max-width: 680px) {
+
+button {
+    padding: 6px 0;
+    width: 100%;
+    background-color: #0265c2;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00509b;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.rodape{
+    margin-top: 50px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0265c2;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        max-width: 90%;
+    }
+    
+    .sobreLoja{
+        display: block;
+        width: 100%; 
+        height: auto; 
+    }
+    .sobreLoja h2{
+        padding: 20px;
+        
+    }
+    .sobreLoja img {
+        width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
+    .sobreLoja div{
+        margin: auto;
+    }
+    .sobreLoja p{
+        padding: 40px 0;
+        width: 100%;
+        align-content: space-between;
+    }
+    
+
+    .produtos{
+        max-width: 90%;
+        display: block;
+        width: 100%; 
+        height: auto;
+
+    }
+
+    .titulo{
+        padding-top: 30px;
+    }
+
+    .produtos img{
+        max-width: 100%;
+        padding: 50px 0 30px;
+    }
+    .produtos h3{
+        font-size: 30px;
+    }
+    .produtos  p{
+        padding: 16px 0;
+        font-size: 20px;
+    }
+    button{
+        padding: 6px 0;
+        width: 90%;
+        background-color: #0265c2;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .rodape{
+        font-size: 0.75em;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+    .container{
+        max-width: 90%;
+    }
+
+    .sobreLoja{
+        display: block;
+    }
+    .sobreLoja h2{
+        padding: 20px;
+    
+    }
+
+    .sobreLoja div{
+        margin: auto;
+    }
+
+
+    .sobreLoja img {
+        width: 100%; 
+        height: auto; 
+        display: block; 
+    }
+
     .produtos{
         display: grid;
-        grid-template-columns: 95%;
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 3%;
         list-style: none;
     }
+    
+    .produtos img{
+        max-width: 100%;
+        padding: 50px 0 30px;
+    }
+    .produtos h3{
+        font-size: 26px;
+    }
+    .produtos h2, p{
+        max-width: 85%;
+        padding: 16px 0;
+    }
+    button{
+    max-width: 85%;    
+    }
+
+    
 }
 
