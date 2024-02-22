@@ -115,23 +115,44 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container{
         max-width: 90%;
     }
     
     .sobreLoja{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
         width: 100%; 
         height: auto; 
     }
-    .sobreLoja h2{
+    h2{
+        width: 100%;
+        text-align: left;
         padding: 20px;
+        font-size: 30px;
         
     }
+    .sobreLoja h2{
+        font-size: 30px;
+    }
+
     .sobreLoja img {
         width: 100%; 
         height: auto; 
-        display: block; 
+        margin: 56px auto; 
     }
 
     .sobreLoja div{
@@ -141,12 +162,15 @@ button:hover {
         padding: 40px 0;
         width: 100%;
         align-content: space-between;
+        font-size: 20px;
     }
     
 
     .produtos{
-        max-width: 90%;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
         width: 100%; 
         height: auto;
 
@@ -154,21 +178,26 @@ button:hover {
 
     .titulo{
         padding-top: 30px;
+        font-size: 30px;
     }
 
     .produtos img{
-        max-width: 100%;
+        width: 100%;
         padding: 50px 0 30px;
     }
     .produtos h3{
         font-size: 30px;
     }
     .produtos  p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 18px;
         padding: 16px 0;
-        font-size: 20px;
+        font-size: 16px;
     }
     button{
-        padding: 6px 0;
+        padding: 8px 0;
         width: 90%;
         background-color: #0265c2;
         color: white;
@@ -186,46 +215,63 @@ button:hover {
     .container{
         max-width: 90%;
     }
-
-    .sobreLoja{
-        display: block;
-    }
-    .sobreLoja h2{
-        padding: 20px;
     
-    }
-
-    .sobreLoja div{
-        margin: auto;
-    }
-
-
     .sobreLoja img {
         width: 100%; 
         height: auto; 
-        display: block; 
+        display: flex; 
+        flex-direction: column;
     }
+
+    .sobreLoja{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobreLoja h2{
+        display: flex;
+        flex-direction: column;
+        font-size: 35px;
+        align-items: left;
+        padding: 20px 20px 20px 0;
+    
+    }
+
+    .sobreLoja p{
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
 
     .produtos{
         display: grid;
         grid-template-columns: repeat(2, 47%);
-        column-gap: 3%;
         list-style: none;
+        max-width: 100%;
+        justify-content: space-between;
+
     }
     
     .produtos img{
         max-width: 100%;
-        padding: 50px 0 30px;
+        padding: 50px 0 0.25rem;
+        align-items: center;
     }
     .produtos h3{
-        font-size: 26px;
+        font-size: 2rem;
+    }
+    .titulo{
+        font-size: 35px;
     }
     .produtos h2, p{
-        max-width: 85%;
+        max-width: 100%;
         padding: 16px 0;
     }
     button{
-    max-width: 85%;    
+    font-size: 1.2rem;
+    max-width: 100%;    
     }
 
     
