@@ -183,7 +183,7 @@ button:hover {
 
     .produtos img{
         width: 100%;
-        padding: 50px 0 30px;
+        padding: 50px 0 0.5rem;
     }
     .produtos h3{
         font-size: 30px;
@@ -203,6 +203,7 @@ button:hover {
         color: white;
         border-radius: 6px;
         cursor: pointer;
+        margin-bottom: 2rem;
     }
     .rodape{
         font-size: 0.75em;
